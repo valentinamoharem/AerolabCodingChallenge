@@ -1,0 +1,113 @@
+.no-scroll {
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap');
+
+.black-space {
+    position: absolute;
+    background-color: #00000057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.black-space .shop-modal {
+    width: 40vw;
+    height: 40vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    z-index: 9999;
+}
+
+.black-space .shop-modal .shop-modal-selector {
+    margin: 2vw 2vw;
+}
+
+.black-space .shop-modal .shop-modal-selector .point-selector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.black-space .shop-modal .shop-modal-selector .point-selector p.shop-option {
+    margin: 2%;
+    padding: 2% 7%;
+    background-color: #aaa;
+    color: #777;
+    border-radius: 50px;
+    transition: 100ms linear;
+    overflow: wrap;
+}
+
+.black-space .shop-modal .shop-modal-selector .point-selector p.shop-option:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #6fe7fa;
+    transition: 100ms linear;
+}
+
+.black-space .shop-modal .shop-modal-selector .point-selector p.shop-option.selected {
+    color: #fff;
+    background-color: #6fe7fa;
+}
+
+.black-space .shop-modal .shop-modal-balance {
+    width: 60%;
+}
+
+.black-space .shop-modal .shop-modal-balance .balance {
+    margin: 10% 0;
+    margin-bottom: 2%;
+    margin-right: 2px;
+    width: 80%;
+    font-family: 'Cutive Mono', monospace;
+    border: 4px dotted lightgray;
+}
+
+.black-space .shop-modal .shop-modal-balance button {
+    border-radius: 50px;
+    border: 1px solid rgb(129, 127, 127);
+    padding: 1% 3%;
+    background-color: rgba(9,9,9,0);
+    position: initial;
+    margin: auto;
+    color: rgb(104, 102, 102);
+}
+
+.black-space .shop-modal .shop-modal-balance button:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.black-space .shop-modal .shop-modal-balance button.confirm {
+    margin-left: 2%;
+    background-color: #6fe7faf8;
+    font-weight: bold;
+}
+
+.black-space .shop-modal .shop-modal-balance button.confirm:focus {
+    background-color: #6fe7fab9;
+}
+
+.black-space .shop-modal .shop-modal-balance button.confirm:hover {
+    background-color: #6fe7fab9;
+    cursor: pointer;
+}
+
+.black-space .shop-modal .shop-modal-balance button.cancel:focus {
+    background-color: #6fe7fa77;
+}
+
+.black-space .shop-modal .shop-modal-balance button.cancel:hover {
+    background-color: #6fe7fa77;
+    cursor: pointer;
+}
