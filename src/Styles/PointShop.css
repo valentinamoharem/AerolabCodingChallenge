@@ -22,30 +22,66 @@
     height: 40vh;
     background-color: #fff;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     z-index: 9999;
 }
 
-.black-space .shop-modal .shop-modal-selector {
+.black-space .shop-modal .row-1 {
+    display: flex;
+    flex-direction: row;
     margin: 2vw 2vw;
+    justify-content: center;
+    align-content: space-between;
+    width: 90%;
+}
+
+.black-space .shop-modal .row-2 {
+    align-self: flex-end;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin: auto 0;
 }
 
 .black-space .shop-modal .shop-modal-selector .point-selector {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
+    width: 100%;
+}
 
+.black-space .shop-modal .shop-modal-selector .point-selector p {
+   width: 30%;
+   margin: 0 auto;
+}
+
+.black-space .shop-modal .shop-modal-selector .point-selector .frst-row {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.black-space .shop-modal .shop-modal-selector .point-selector #lst-row {
+    margin: 0 auto;
+}
+
+.black-space .shop-modal .shop-modal-selector p {
+    margin-bottom: 1%;
 }
 
 .black-space .shop-modal .shop-modal-selector .point-selector p.shop-option {
     margin: 2%;
-    padding: 2% 7%;
+    padding: 4%;
     background-color: #aaa;
     color: #777;
     border-radius: 50px;
     transition: 100ms linear;
     overflow: wrap;
+    text-align: center;
+    font-size: 1.1em;
 }
 
 .black-space .shop-modal .shop-modal-selector .point-selector p.shop-option:hover {
@@ -61,53 +97,66 @@
 }
 
 .black-space .shop-modal .shop-modal-balance {
-    width: 60%;
+    border-left: 1px solid gray;
+    height: 100%;
+    width: 35%;
+    margin: 0 3%;
+}
+
+.black-space .shop-modal .shop-modal-balance p {
+    margin-left: 7%;
+    margin-bottom: 4%;
 }
 
 .black-space .shop-modal .shop-modal-balance .balance {
-    margin: 10% 0;
-    margin-bottom: 2%;
-    margin-right: 2px;
-    width: 80%;
-    font-family: 'Cutive Mono', monospace;
-    border: 4px dotted lightgray;
+    flex-direction: row;
+    display: inline-flex;
+    background-color: #eee;
+    border-radius: 50px;
+    margin-left: 7%;
+    padding: 3% 7%;
 }
 
-.black-space .shop-modal .shop-modal-balance button {
+.black-space .shop-modal .shop-modal-balance .balance p {
+    margin: auto;
+}
+
+.black-space .shop-modal button {
     border-radius: 50px;
     border: 1px solid rgb(129, 127, 127);
     padding: 1% 3%;
     background-color: rgba(9,9,9,0);
-    position: initial;
-    margin: auto;
     color: rgb(104, 102, 102);
+    text-align: center;
 }
 
-.black-space .shop-modal .shop-modal-balance button:focus {
+.black-space .shop-modal button:focus {
     outline: none;
     cursor: pointer;
 }
 
-.black-space .shop-modal .shop-modal-balance button.confirm {
+.black-space .shop-modal button.confirm {
     margin-left: 2%;
     background-color: #6fe7faf8;
     font-weight: bold;
 }
 
-.black-space .shop-modal .shop-modal-balance button.confirm:focus {
+.black-space .shop-modal button.confirm:focus {
     background-color: #6fe7fab9;
 }
 
-.black-space .shop-modal .shop-modal-balance button.confirm:hover {
+.black-space .shop-modal button.confirm:hover {
     background-color: #6fe7fab9;
     cursor: pointer;
 }
 
-.black-space .shop-modal .shop-modal-balance button.cancel:focus {
+.black-space .shop-modal button.cancel:focus {
     background-color: #6fe7fa77;
 }
 
-.black-space .shop-modal .shop-modal-balance button.cancel:hover {
+.black-space .shop-modal button.cancel:hover {
     background-color: #6fe7fa77;
     cursor: pointer;
 }
+
+
