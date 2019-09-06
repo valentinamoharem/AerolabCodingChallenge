@@ -10,13 +10,6 @@
     transition: color font-weight 100ms ease-in-out;
 }
 
-.user-data p.user-name:hover {
-    color: #ff8800;
-    font-weight: bold;
-    cursor: auto;
-    transition: color font-weight 100ms ease-in-out;
-}
-
 .user-data .user-coins {
     display: inline-flex;
     margin-right: 4vw;
