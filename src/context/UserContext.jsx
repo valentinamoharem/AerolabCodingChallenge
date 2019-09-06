@@ -39,7 +39,7 @@ export default class UserContextProvider extends Component {
         document.body.classList.toggle('no-scroll')
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0; 
-        console.log(`Toggled, now showing? ${this.state.isBuyingPoints}`)
+        
     }
 
     render() {

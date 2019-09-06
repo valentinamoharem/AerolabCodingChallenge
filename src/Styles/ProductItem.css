@@ -131,7 +131,7 @@
 }
 
 .product-item .modal .modal-content .redeem-container .redeem-btn:hover {
-    background-color: #daa520;
+    background-color: #ff8800;
     color: #fff;
     transition: background-color 200ms linear, color 150ms linear, all 200ms ease-in-out, font-size 200ms linear;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);

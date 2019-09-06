@@ -14,17 +14,25 @@ const PointShop = props => {
             <div className="shop-modal">
                 <div className="row-1">
                     <div className="shop-modal-selector">
-                        <p>Select amount of points:</p>
+                        <p>Select amount:</p>
                         <div className="point-selector">
-                            <div className="frst-row">
-                                <p className={`shop-option ${selected === 0 && "selected"}`} onClick={() => setSelected(0)}>1000</p>
-                                <p className={`shop-option ${selected === 1 && "selected"}`} onClick={() => setSelected(1)}>5000</p>
-                            </div>
-                            <p id="lst-row" className={`shop-option ${selected === 2 && "selected"}`} onClick={() => setSelected(2)}>7500</p>
+                            <div className={`shop-option first ${selected === 0 && "selected"}`} onClick={() => setSelected(0)}>1000 <img className='coin' src={coin} alt="coin"/></div>
+                            <div className={`shop-option ${selected === 1 && "selected"}`} onClick={() => setSelected(1)}>5000 <img className='coin' src={coin} alt="coin"/></div>
+                            <div className={`shop-option ${selected === 2 && "selected"}`} onClick={() => setSelected(2)}>7500 <img className='coin' src={coin} alt="coin"/></div>
                         </div>
                     </div>
                     <div className="shop-modal-balance">
-                        <p>Total points:</p>
+                        <p className="YP-text">Your points:</p>
+                        <div className="balance">
+                            <p>{`${props.points}`}</p>
+                            <img className='coin' src={coin} alt="coin"/>
+                        </div>
+                        <p className="PO-text">Purchasing:</p>
+                        <div className="balance">
+                            <p>{`${optionArr[selected]}`}</p>
+                            <img className='coin' src={coin} alt="coin"/>
+                        </div>
+                        <p className="TP-text">Total points:</p>
                         <div className="balance">
                             <p>{`${props.points + optionArr[selected]}`}</p>
                             <img className='coin' src={coin} alt="coin"/>
